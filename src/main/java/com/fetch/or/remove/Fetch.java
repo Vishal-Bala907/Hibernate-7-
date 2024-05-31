@@ -25,7 +25,7 @@ class FetchStudentDemoMethods {
 	public void getStudentUsingGetReferenceMethod(int id) {
 		this.id = id;
 		student = session.getReference(Student.class, this.id);
-		System.out.println(student);
+		System.out.println(student.getName());
 
 	}
 
@@ -84,7 +84,8 @@ public class Fetch {
 //		methods.getMultipleData(new int[]{52,102,1});
 //		methods.getMultipleData(new int[]{2,102,1});
 //		methods.getDataBySimpleNaturalIdMethod(0);
-		methods.removeData();
+//		methods.removeData();
+		methods.getStudentUsingGetReferenceMethod(52);
 	}
 
 }
