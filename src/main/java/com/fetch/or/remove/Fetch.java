@@ -85,7 +85,7 @@ public class Fetch {
 //		methods.getMultipleData(new int[]{2,102,1});
 //		methods.getDataBySimpleNaturalIdMethod(0);
 //		methods.removeData();
-		methods.getStudentUsingGetReferenceMethod(52);
+		methods.getStudentUsingGetReferenceMethod(102);
 	}
 
 }

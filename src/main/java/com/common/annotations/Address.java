@@ -1,17 +1,14 @@
 package com.common.annotations;
 
-import java.util.Date;
 import java.util.Arrays;
+import java.util.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 import jakarta.persistence.Transient;
 
 @Entity
@@ -33,8 +30,7 @@ public class Address {
 	@Transient
 	private double x;
 	
-	@SuppressWarnings("deprecation")
-	@Temporal(TemporalType.DATE)
+
 	private Date date;
 	
 //	@Lob
