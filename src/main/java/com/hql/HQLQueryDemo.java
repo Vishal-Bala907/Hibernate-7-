@@ -24,9 +24,9 @@ public class HQLQueryDemo {
 		
 		List<Student> list = 
 				session.createQuery("SELECT s FROM Student as s WHERE s.name =:name",Student.class).
-				setParameter("name", "Vishal").getResultList();
+				setParameter("name", "Thomas").getResultList();
 		Student student = list.get(0);
-		student.setName("Thomas");
+		student.setName("Vihsal");
 		Transaction beginTransaction = session.beginTransaction();
 			session.merge(student);
 		beginTransaction.commit();
